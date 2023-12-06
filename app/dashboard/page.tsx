@@ -20,7 +20,7 @@ export default function DashboardPage() {
       </div>
 
       <div className="flex flex-col border items-center px-10 pb-52">
-        today's plan
+        today plan
       </div>
     </div>
   );
