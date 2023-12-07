@@ -21,9 +21,12 @@ export default function RootLayout({
       <html lang="en">
         <body className="min-h-screen ">
           <Nav />
-          <div className="flex flex-col items-center justify-between p-24">
+          <div className="flex flex-col items-center justify-between p-4">
             {children}
           </div>
+          <footer className="flex justify-center items-center">
+            Copyright
+          </footer>
         </body>
       </html>
     </ClerkProvider>
