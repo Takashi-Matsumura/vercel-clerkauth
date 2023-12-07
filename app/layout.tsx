@@ -24,7 +24,7 @@ export default function RootLayout({
           <div className="flex flex-col items-center justify-between p-4">
             {children}
           </div>
-          <footer className="flex justify-center items-center">
+          <footer className="flex justify-center items-center pt-10">
             Copyright
           </footer>
         </body>

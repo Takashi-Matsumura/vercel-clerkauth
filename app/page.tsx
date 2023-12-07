@@ -14,7 +14,7 @@ export default function Home() {
         <h1>Next.js Auth Tutorial</h1>
         <Image src="/next.svg" alt="Next.js logo" width="200" height="200" />
         <Link href="/sign-in">
-          <button className="bg-black text-white rounded-xl hover:bg-blue-900 px-5 py-2 w-32">
+          <button className="bg-black text-white rounded-full hover:bg-blue-900 px-5 py-2 w-32">
             Login
           </button>
         </Link>
