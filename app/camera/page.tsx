@@ -191,7 +191,7 @@ export default function DashboardPage() {
       </div>
 
       <div className="flex flex-col w-full">
-        <p className="pb-2 pt-10">利用者名:</p>
+        <p className="pb-2">利用者名:</p>
         <p className="flex text-3xl justify-center font-bold border py-5 w-full">
           {qrCodeText.name}
         </p>
