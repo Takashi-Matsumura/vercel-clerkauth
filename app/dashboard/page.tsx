@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import DateNav from "../components/DateNav";
+import ActionPane from "./ActionPane";
 
 export default function DashboardPage() {
   return (
@@ -22,8 +23,8 @@ export default function DashboardPage() {
         </Link>
       </div>
 
-      <div className="flex flex-col w-full border items-center pb-52">
-        today plan
+      <div className="flex flex-col w-full border items-center">
+        <ActionPane />
       </div>
     </div>
   );

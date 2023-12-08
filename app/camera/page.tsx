@@ -165,8 +165,7 @@ export default function DashboardPage() {
           <video
             className="p-10"
             ref={videoRef}
-            width="240"
-            height="240"
+            style={{ width: "240px", height: "240px" }}
             autoPlay
             playsInline
             muted
