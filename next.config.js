@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+// const nextConfig = {}
 
-module.exports = nextConfig
+// module.exports = nextConfig
+
+//const { InjectManifest } = require("workbox-webpack-plugin");
+
+const withPWA = require("next-pwa")({
+  dest: "public",
+});
+
+module.exports = withPWA({
+  // next.js config
+});
