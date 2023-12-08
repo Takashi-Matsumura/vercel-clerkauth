@@ -151,8 +151,8 @@ export default function DashboardPage() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center space-y-5">
-      <div className="flex">
+    <div className="flex flex-col justify-center items-center space-y-1">
+      <div className="flex items-center">
         <Link href="/dashboard">
           <button className="bg-black text-white rounded-full hover:bg-gray-500 w-10 h-10">
             戻る
@@ -163,42 +163,42 @@ export default function DashboardPage() {
         <canvas ref={canvasRef} style={{ display: "none" }} />
         <div>
           <video
-            className="p-10"
+            className="p-1"
             ref={videoRef}
             style={{ width: "200px", height: "200px" }}
             autoPlay
             playsInline
             muted
           />
-          <div className="flex items-center justify-between">
-            <button
-              className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
-              onClick={switchCameraFunction}
-            >
-              カメラ切替
-            </button>
-            <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-              onClick={scanQRCode}
-              onDoubleClick={clearQrCodeText}
-            >
-              QRコード
-            </button>
-          </div>
         </div>
         <div className="w-10" />
       </div>
+      <div className="flex items-center justify-between w-full">
+        <button
+          className="bg-gray-500 hover:bg-gray-700 text-white py-2 px-4 rounded"
+          onClick={switchCameraFunction}
+        >
+          カメラ切替
+        </button>
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded"
+          onClick={scanQRCode}
+          onDoubleClick={clearQrCodeText}
+        >
+          QRコード
+        </button>
+      </div>
 
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col w-full pt-3">
         <p className="pb-2">利用者名:</p>
-        <p className="flex text-3xl justify-center font-bold border py-5 w-full">
+        <p className="flex text-3xl justify-center border py-5 w-full">
           {qrCodeText.name}
         </p>
       </div>
 
       <ClientSideClock />
       <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="bg-black hover:bg-gray-700 text-white py-2 px-4 rounded-full w-32"
         onClick={recordToFirestore}
       >
         登録
