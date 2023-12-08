@@ -29,7 +29,7 @@ const ActionPane = () => {
           <div className="px-3 py-1 bg-blue-500 text-white rounded-3xl text-xs">
             13:00
           </div>
-          <p>13:10着</p>
+          <p className="text-red-400">13:10着</p>
         </div>
         <div className="flex justify-center items-center space-x-2">
           <p className="text-2xl">琉球 花子さん</p>
